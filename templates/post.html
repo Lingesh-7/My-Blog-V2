@@ -1,0 +1,42 @@
+{% include 'header.html' %}
+        <!-- Page Header-->
+         {% for i in datass: %}
+         {% if i['id']==b: %}
+        <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h2>{{i['title']}}</h2>
+                            <h3 class="subheading">{{i['subtitle']}}</h3>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Libgesh R</a>
+                                on {{datess}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>{{i['body']}}</p>
+                        <!-- <p>
+                            Placeholder text by
+                            <a href="http://spaceipsum.com/">Space Ipsum</a>
+                            &middot; Images by
+                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+        <!-- Footer-->
+        
+        {% include 'footer.html' %}
