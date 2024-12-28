@@ -26,8 +26,8 @@ def about():
 @app.route('/contact',methods=['GET',"POST"])
 def contacts():
     if request.method=="POST":
-        my="lingadumys@gmail.com"
-        password="pncjzrkuohcllezh"
+        my="lingadugmail.com"
+        password=pass
         to_onwer_email="lingesh.91918@gmail.com"
         with smtplib.SMTP("smtp.gmail.com") as c:
             c.starttls()
